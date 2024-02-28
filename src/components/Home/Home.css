@@ -1,0 +1,116 @@
+.home div {
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .slogan h1 {
+    font-size: 12rem;
+    text-align: center;
+}
+
+.home .slogan h1 span {
+    color: var(--color-orange);
+    transition: 0.2s;
+}
+
+.home .slogan h1 span:hover {
+    border-bottom: var(--color-orange) solid .5rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.home div .container-objetivos {
+    height: 50%;
+    width: 85%;
+    display: flex;
+    border-top: 1rem solid var(--color-orange);
+    border-bottom: 1rem solid var(--color-orange);
+    justify-content: space-around;
+}
+
+.container-objetivos .items-objetivos {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.container-objetivos div h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container-objetivos div p {
+    text-align: center;
+}
+
+.container-objetivos div:nth-child(2) p {
+    text-align: center;
+    font-size: 1.4rem;
+    border-left: .2rem solid var(--color-orange);
+    border-right: .2rem solid var(--color-orange);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .home .slogan h1 {
+        font-size: 6rem;
+    }
+    .home div .container-objetivos {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-top: none;
+        border-bottom: none;
+        justify-content: space-around;
+    }
+    .container-objetivos .items-objetivos {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1rem;
+    }
+    .container-objetivos div:nth-child(2) p {
+        text-align: center;
+        font-size: 1rem;
+        border-left: none;
+        border-right:none; 
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .container-objetivos div p {
+        text-align: center;
+    }
+    .container-objetivos div h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .items-objetivos:nth-child(2) {
+        border-top: .2rem solid var(--color-orange);
+        border-bottom: .2rem solid var(--color-orange);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .home .slogan h1 {
+        font-size: 3.5rem;
+    }
+}
