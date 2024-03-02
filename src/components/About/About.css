@@ -1,0 +1,73 @@
+.about {
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    align-items: center;
+    width: 70%;
+}
+
+.about div h2 {
+    font-size: 8rem;
+    margin-top: -1rem;
+    text-align:center;
+}
+
+.about div p {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 400;
+}
+
+.about div button {
+    background-color: var(--color-orange);
+    color: rgb(255,255,255);
+    border: none;
+    padding: .8rem 2.6rem .8rem 2.6rem;
+    font-size: 3rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+    .about div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+        align-items: center;
+        width: 95%;
+        margin-top: 2rem;
+    }
+
+    .about div h2 {
+        font-size: 3.5rem;
+        margin-top: -1rem;
+        text-align:center;
+    }
+
+    .about div p {
+        text-align:left;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+
+    .about div button {
+        background-color: var(--color-orange);
+        color: rgb(255,255,255);
+        border: none;
+        padding: .4rem 1rem;
+        font-size: 1.6rem;
+        font-weight: 900;
+    }
+}
