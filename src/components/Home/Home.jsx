@@ -6,14 +6,14 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className='home'>
+    <div className='home' id="home">
         <div className='slogan'>
             <h1>
                 QUE CADA <span>CLICK</span> CUENTE
             </h1>
         </div>
         <div>
-            <div className='container-objetivos'>
+            <div className='container-objetivos' id='cont-obj'>
                 <div className='items-objetivos mision'>
                     <h2>MISIÓN</h2>
                     <img src={Objetivo} alt='mision' />

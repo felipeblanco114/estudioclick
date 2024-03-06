@@ -5,6 +5,7 @@ header {
     align-items: center;
     width: 100vw;
     position: fixed;
+    z-index: 9999;
 }
 
 header div {
@@ -52,6 +53,11 @@ header div {
     cursor: pointer;
     opacity: 0;
     top: 2rem;
+    z-index: 10;
+}
+
+nav {
+    z-index: 9;
 }
 
 nav input:checked ~ .hamburger {

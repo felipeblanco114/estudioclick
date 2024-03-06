@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -16,4 +17,7 @@ body {
   position: relative;
   width: 100vw;
   overflow-x: hidden;
+  background-image: url(./images/click-back.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
