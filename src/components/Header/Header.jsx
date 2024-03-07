@@ -4,24 +4,11 @@ import './Header.css';
 
 const Header = () => {
 
-  // const toggle = () => {
-  //   var checkBox = document.getElementById("check");
-  //   var container = document.getElementById("cont-obj");
-  //   if (checkBox.checked){
-  //     container.style.display = "block";
-  //   } else {
-  //      container.style.display = "none";
-  //   }
-  // }
-
   const toggle = () => {
   const check = document.getElementById("check");
   if(check.checked === true) {
     check.checked = false
-  } else {
-    check.checked = true;
   }
-
 }
 
   return (
@@ -37,7 +24,7 @@ const Header = () => {
                 <li><a href="#home" onClick={toggle}>home</a></li>
                 <li><a href="#about"  onClick={toggle}>sobre nosotros</a></li>
                 <li><a href="#services"  onClick={toggle}>estudio</a></li>
-                <li><a href="#"  onClick={toggle}>contacto</a></li>
+                <li><a href="#contact"  onClick={toggle}>contacto</a></li>
               </ul>
             </nav>
         </div>

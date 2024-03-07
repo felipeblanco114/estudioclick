@@ -32,6 +32,7 @@
     border-bottom: solid .2rem rgb(0,0,0);
     padding: .6rem;
     cursor: pointer;
+    font-weight: 600;
 }
 .container-services div h3:nth-child(6) {
     font-size: 2.2rem;
