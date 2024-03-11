@@ -11,17 +11,55 @@
     width: 100%;
     height: 30%;
     background-color: var(--color-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-header div {
+    width: 80%;
+    height: 50%;
+    color: rgb(255,255,255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-header a {
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+
+.contact-header div h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .contact-container {
     height: 100%;
     display: flex;
-    width: 60%;
+    width: 50%;
     justify-content: center;
     align-items: center;
 }
 .contact-container div {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+/* 
+.contact-container div h2 {
+    margin: 1rem;
+} */
+
+.contact-container div img {
+    max-width: 6rem;
+    position: absolute;
+    left: 1rem;
+    top: -10rem;
 }
 
 .contact-container div form {
@@ -29,10 +67,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
 }
 
 .contact-container div form input, .contact-container div form textarea  {
-    width: 60%;
+    width: 100%;
     margin: 1rem;
     padding: .4rem;
     border-left: 0;
@@ -40,6 +79,7 @@
     border-top: 0;
     border-bottom: 1px solid rgba(0,0,0,0.3);
     background: rgb(255,255,255, 0.5);
+    resize: none;
 }
 
 .contact-container div form input:focus, .contact-container div form textarea:focus {
@@ -51,7 +91,7 @@
 }
 
 .contact-container div form button {
-    width: 30%;
+    width: 50%;
     border: none;
     background: var(--color-orange);
     color: rgb(255,255,255);
@@ -59,5 +99,63 @@
     font-size: 1rem;
     cursor: pointer;
     font-weight: 500;
+}
+
+.map {
+    width:100vw;
+    height:20rem; 
+    border:none;
+}
+
+@media only screen and (max-width: 576px) {
+    .contact-header {
+        height: 8rem;
+    }
+
+    .map {
+        width:100vw;
+        height:100%; 
+        border:none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .contact-container div img {
+        display: none;
+    }
+
+    .contact {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-container div {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    form {
+        margin-top: -7rem;
+    }
+
 }
 

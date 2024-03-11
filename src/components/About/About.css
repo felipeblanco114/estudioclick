@@ -66,8 +66,8 @@
         background-color: var(--color-orange);
         color: rgb(255,255,255);
         border: none;
-        padding: .4rem 1rem;
-        font-size: 1.6rem;
+        padding: .4rem .4rem;
+        font-size: 1.4rem;
         font-weight: 900;
     }
 }

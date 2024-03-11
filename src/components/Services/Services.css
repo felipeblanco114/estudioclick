@@ -39,3 +39,25 @@
     border-bottom: none;
     padding: .6rem;
 }
+
+@media only screen and (max-width: 576px) {
+    .services {
+        margin-bottom: 5rem;
+    }
+
+    .services div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .services div h2 {
+        font-size: 3.5rem;
+        margin-top: -1rem;
+        text-align:center;
+    }
+}
