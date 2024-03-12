@@ -15,7 +15,9 @@ const Header = () => {
     <header>
         <div>
             <div className='logo'>
-                <img src={Logo} alt='logo espacio click' />
+                <a href='#home'>
+                  <img src={Logo} alt='logo espacio click' />
+                </a>
             </div>
             <nav>
               <input type='checkbox' className='toggle-menu' id='check'  />

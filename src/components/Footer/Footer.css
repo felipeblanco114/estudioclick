@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    height: 10rem;
+    height: 12rem;
     background-color: var(--color-orange);
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@ footer {
     align-items: center;
 }
 
-.footer-container div {
+.footer-container .footer-list {
     height: 90%;
     margin: 4rem;
     margin-left: 0;
@@ -26,4 +26,38 @@ footer {
     font-weight: 400;
     color: rgb(255,255,255);
     text-decoration: none;
+}
+
+.footer-list div {
+    position: relative;
+    display: flex;
+    margin: .3rem;
+    margin-left: 0;
+    align-items: center;
+}
+
+.footer-list div h4 {
+    font-weight: 400;
+    margin-left: .2rem;
+}
+
+footer a {
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 576px) {
+    footer {
+        height: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-container .footer-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem;
+    }
 }
