@@ -9,23 +9,22 @@
 .home .slogan h1 {
     font-size: 12rem;
     text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .home .slogan h1 span {
     color: var(--color-orange);
     transition: 0.2s;
+
 }
 
 .home .slogan h1 span:hover {
-    border-bottom: var(--color-orange) solid .5rem;
     cursor: pointer;
     transition: 0.2s;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 8px;
 }
-
-/* .container-objetivos {
-    position: relative;
-    z-index: 0;
-} */
 
 .home div .container-objetivos {
     position: relative;
@@ -58,6 +57,11 @@
 .container-objetivos div p {
     text-align: center;
 }
+
+.container-objetivos .items-objetivos p::selection {
+    color: rgb(255,255,255);
+    background: var(--color-orange);
+  }
 
 .container-objetivos div:nth-child(2) p {
     text-align: center;

@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Logo from "../../images/logoclick.png";
+import emailjs from "@emailjs/browser";
 import './Contact.css';
 
 const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+        .sendForm("service_oz7a9ak", "template_5pfskm8", form.current, {
+            publicKey: "mq6HW9JAJ9CTkb1w_",
+        })
+        .then(
+            () => {
+            console.log('SUCCESS!');
+            form.current.reset();
+            },
+            (error) => {
+            console.log('FAILED...', error.text);
+            },
+        );
+    };
+
   return (
     <div className='contact' id='contact'>
         <div className='contact-header'>
@@ -24,12 +46,12 @@ const Contact = () => {
                 </div>
             </div>
             <div>
-                <form action="https://formsubmit.co/estudioclick418@gmail.com" method="POST">
-                    <input type='text' placeholder='Nombre' required />
-                    <input type='text' placeholder='WhatsApp' />
-                    <input type='email' name='email' placeholder='e-mail' required />
-                    <textarea type='text' name='comments' placeholder='Mensaje' rows='5' />
-                    <button type='submit'>
+                <form ref={form} onSubmit={sendEmail}>
+                    <input type='text' placeholder='Nombre completo' name='user_name' required />
+                    <input type='text' placeholder='WhatsApp' name='user_telefono' />
+                    <input type='email' name='user_email' placeholder='e-mail' required />
+                    <textarea type='text' name='message' placeholder='Mensaje' rows='5' />
+                    <button type='submit' value='Send'>
                         Enviar mensaje
                     </button>
                 </form>

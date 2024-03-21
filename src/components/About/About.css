@@ -19,13 +19,26 @@
     font-size: 8rem;
     margin-top: -1rem;
     text-align:center;
+    user-select: none;
+    -webkit-user-select: none;
 }
+
+.about div h2:hover {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 4px;
+}
+
 
 .about div p {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 4rem;
     font-weight: 400;
+}
+
+.about div p::selection {
+    color: rgb(255,255,255);
+    background: var(--color-orange);
 }
 
 .about div button {

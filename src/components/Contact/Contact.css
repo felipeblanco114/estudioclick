@@ -25,6 +25,11 @@
     justify-content: space-between;
 }
 
+.contact-header div a::selection,.contact-header div h3::selection  {
+    background: rgb(255,255,255);
+    color: var(--color-orange);
+}
+
 .contact-header a {
     color: rgb(255,255,255);
     text-decoration: none;
@@ -50,10 +55,11 @@
     align-items: center;
     position: relative;
 }
-/* 
-.contact-container div h2 {
-    margin: 1rem;
-} */
+
+.contact-container h2::selection {
+    color: rgb(255,255,255);
+    background: var(--color-orange);
+}
 
 .contact-container div img {
     max-width: 6rem;
@@ -95,7 +101,7 @@
     border: none;
     background: var(--color-orange);
     color: rgb(255,255,255);
-    padding: .4rem;
+    padding: .6rem;
     font-size: 1rem;
     cursor: pointer;
     font-weight: 500;

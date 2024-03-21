@@ -19,14 +19,25 @@ footer {
     margin-left: 0;
 }
 
+
 .footer-container h3 {
     font-weight: 600;
 }
+
+.footer-container h3::selection {
+    color: var(--color-orange);
+    background: rgb(255,255,255);
+  }
 .footer-container h4 a {
     font-weight: 400;
     color: rgb(255,255,255);
     text-decoration: none;
 }
+
+.footer-container h4 a::selection {
+    color: var(--color-orange);
+    background: rgb(255,255,255);
+  }
 
 .footer-list div {
     position: relative;
@@ -40,6 +51,11 @@ footer {
     font-weight: 400;
     margin-left: .2rem;
 }
+
+.footer-list div h4::selection {
+    color: var(--color-orange);
+    background: rgb(255,255,255);
+  }
 
 footer a {
     color: rgb(255,255,255);

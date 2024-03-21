@@ -27,6 +27,11 @@ header div {
     transition: .3s;
 }
 
+.logo img {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
 .hamburger::before, .hamburger::after {
     content: "";
     position: absolute;
@@ -105,6 +110,11 @@ nav a {
     text-decoration: none;
     transition: .3s;
 }
+
+nav a::selection {
+    color: var(--color-orange);
+    background: rgb(0,0,0);
+  }
 nav a:hover {
     color: rgb(0,0,0);
     text-decoration: none;

@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../../images/logoclick.png';
+import { HashLink } from 'react-router-hash-link';
 import './Header.css';
 
 const Header = () => {
@@ -15,18 +16,18 @@ const Header = () => {
     <header>
         <div>
             <div className='logo'>
-                <a href='#home'>
-                  <img src={Logo} alt='logo espacio click' />
-                </a>
+              <HashLink to="/#home" smooth onClick={toggle}>
+                <img src={Logo} alt='logo espacio click' />
+              </HashLink>
             </div>
             <nav>
               <input type='checkbox' className='toggle-menu' id='check'  />
               <div className="hamburger"></div>
               <ul className='menu'>
-                <li><a href="#home" onClick={toggle}>home</a></li>
-                <li><a href="#about"  onClick={toggle}>sobre nosotros</a></li>
-                <li><a href="#services"  onClick={toggle}>estudio</a></li>
-                <li><a href="#contact"  onClick={toggle}>contacto</a></li>
+                <li><HashLink to="/#home" smooth onClick={toggle}>home</HashLink></li>
+                <li><HashLink to="/#about" smooth onClick={toggle}>sobre nosotros</HashLink></li>
+                <li><HashLink to="/#services" smooth onClick={toggle}>estudio</HashLink></li>
+                <li><HashLink to="/#contact" smooth onClick={toggle}>contacto</HashLink></li>
               </ul>
             </nav>
         </div>

@@ -8,14 +8,6 @@ const Services = () => {
             <h2>
                 SERVICIOS
             </h2>
-            <div>
-                <h3>BRANDING</h3>
-                <h3>LOGOS</h3>
-                <h3>REDES SOCIALES</h3>
-                <h3>FOTOGRAFÍA</h3>
-                <h3>MARKETING</h3>
-                <h3>SITIOS WEB</h3>
-            </div>
         </div>
     </div>
   )
