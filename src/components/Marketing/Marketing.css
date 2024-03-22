@@ -1,0 +1,55 @@
+.marketing {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.marketing h2 {
+    font-size: 8rem;
+    margin-top: 6rem;
+}
+
+.marketing-cards {
+    display: grid;
+    grid-template-areas:
+    "estrategias gestion gestion"
+    "redes redes redes";
+    width: 100%;
+    grid-gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.marketing-cards div {
+    background-color: var(--color-orange);
+    color: rgb(255,255,255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2rem 0 2rem 0;
+}
+
+.marketing-cards div h3 {
+    font-size: 3rem;
+}
+
+.marketing-cards div p {
+    font-size: 1.25rem;
+    width: 90%;
+}
+
+.marketing-cards div:nth-child(1) {
+    grid-area: estrategias;
+}
+.marketing-cards div:nth-child(2) {
+    grid-area: gestion;
+}
+.marketing-cards div:nth-child(3) {
+    grid-area: redes;
+}

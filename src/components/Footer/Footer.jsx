@@ -3,6 +3,7 @@ import './Footer.css';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
   return (
@@ -10,10 +11,10 @@ const Footer = () => {
         <div className='footer-container'>
             <div className='footer-list'>
                 <h3>Explorar</h3>
-                <h4><a href='#home'>Home</a></h4>
-                <h4><a href='#about'>Sobre nosotros</a></h4>
-                <h4><a href='#services'>Estudio</a></h4>
-                <h4><a href='#contact'>Contacto</a></h4>
+                <h4><HashLink to="/#home" smooth>Home</HashLink></h4>
+                <h4><HashLink to="/#about" smooth>Sobre nosotros</HashLink></h4>
+                <h4><HashLink to="/#services" smooth>Estudio</HashLink></h4>
+                <h4><HashLink to="/#contact" smooth>Contacto</HashLink></h4>
             </div>
             <div className='footer-list'>
               <h3>Dirección</h3>

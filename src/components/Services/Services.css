@@ -27,16 +27,58 @@
     height: 70%;
 }
 
-.container-services div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container-services .services-list {
+    display: grid;
+    grid-template-areas: 
+    "a a b b"
+    ". c c .";
 }
+.container-services h3 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.container-services h3::selection {
+    color: rgb(255,255,255);
+    background: var(--color-orange);
+  }
+
+.container-services h3:hover {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    cursor: pointer;
+}
+
+.container-services h3:nth-child(1) {
+    grid-area: a;
+    border-right: solid 2px rgb(0,0,0,0.7);
+}
+.container-services h3:nth-child(2) {
+    grid-area: b;
+}
+.container-services h3:nth-child(3) {
+    grid-area: c;
+}
+
+.container-services p {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+}
+
+.container-services a {
+    color: rgb(0,0,0);
+}
+
+.container-services p::selection {
+    color: rgb(255,255,255);
+    background: var(--color-orange);
+  }
 
 @media only screen and (max-width: 576px) {
     .services {
         margin-bottom: 5rem;
+        height: 100%;
     }
 
     .services div {
@@ -53,5 +95,15 @@
         font-size: 3.5rem;
         margin-top: -1rem;
         text-align:center;
+    }
+    .container-services h3 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .container-services h3:nth-child(3) {
+        margin-top: 1rem;
+    }
+    .services p {
+        font-size: 1rem;
     }
 }

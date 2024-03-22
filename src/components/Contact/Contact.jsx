@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Logo from "../../images/logoclick.png";
+// import Logo from "../../images/logoclick.png";
 import emailjs from "@emailjs/browser";
 import './Contact.css';
 
@@ -38,7 +38,7 @@ const Contact = () => {
         </div>
         <div className='contact-container' data-aos="fade-up">
             <div>
-                <img src={Logo} alt="Logo Estudio Click" />
+                {/* <img src={Logo} alt="Logo Estudio Click" /> */}
                 <div>
                     <h2>
                         ESCRIBINOS
