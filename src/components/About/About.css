@@ -51,6 +51,11 @@
     cursor: pointer;
 }
 
+.about div button:hover {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+
 @media only screen and (max-width: 576px) {
     .about {
         height: 100%;

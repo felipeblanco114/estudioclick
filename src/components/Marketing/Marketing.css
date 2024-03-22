@@ -13,6 +13,11 @@
     margin-top: 6rem;
 }
 
+.marketing h2:hover {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+
 .marketing-cards {
     display: grid;
     grid-template-areas:
@@ -33,6 +38,12 @@
     text-align: center;
     border-radius: 10px;
     padding: 2rem 0 2rem 0;
+    transition: 0.2s;
+}
+
+.marketing-cards div h3::selection, .marketing-cards div p::selection {
+    color: rgb(255,255,255);
+    background: var(--color-orange);
 }
 
 .marketing-cards div h3 {
@@ -44,6 +55,12 @@
     width: 90%;
 }
 
+.marketing-cards div:hover {
+    background-color: rgb(255,255,255,0.3);
+    color: var(--color-orange);
+    transition: 0.2s;
+}
+
 .marketing-cards div:nth-child(1) {
     grid-area: estrategias;
 }
@@ -52,4 +69,34 @@
 }
 .marketing-cards div:nth-child(3) {
     grid-area: redes;
+}
+@media only screen and (max-width: 576px) {
+    .marketing {
+        width: 95%;
+    }
+    .marketing-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .marketing-cards div:hover {
+        background-color: var(--color-orange);
+        color: rgb(255,255,255);
+    }
+
+    .marketing-cards div {
+        width: 100%;
+    }
+
+    .marketing h2 {
+        font-size: 3.5rem;
+    }
+    .marketing-cards div h3 {
+        font-size: 2rem;
+    }
+    .marketing-cards div p {
+        font-size: 1rem;
+    }
 }

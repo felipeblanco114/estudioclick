@@ -1,0 +1,121 @@
+.design {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.design h2 {
+    font-size: 8rem;
+    margin-top: 6rem;
+}
+
+.design h2:hover {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+
+.design-cards {
+    display: grid;
+    grid-template-areas:
+    "branding fotografia fotografia"
+    "branding ui ui"
+    "logos ui ui"
+    "logos navegacion navegacion"
+    "virtual navegacion navegacion"
+    "virtual publicidad publicidad";
+    width: 100%;
+    grid-gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.design-cards div {
+    background-color: var(--color-orange);
+    color: rgb(255,255,255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2rem 0 2rem 0;
+    transition: 0.2s;
+}
+
+.design-cards div:hover {
+    background-color: rgb(255,255,255,0.3);
+    color: var(--color-orange);
+    transition: 0.2s;
+}
+
+.design-cards div h3::selection, .design-cards div p::selection {
+    color: rgb(255,255,255);
+    background: var(--color-orange);
+}
+
+.design-cards div h3 {
+    font-size: 3rem;
+}
+
+.design-cards div p {
+    font-size: 1.25rem;
+    width: 90%;
+}
+
+.design-cards div:nth-child(1){
+    grid-area: branding;
+}
+.design-cards div:nth-child(2){
+    grid-area: fotografia;
+}
+.design-cards div:nth-child(3){
+    grid-area: ui;
+}
+.design-cards div:nth-child(4){
+    grid-area: logos;
+}
+.design-cards div:nth-child(5){
+    grid-area: navegacion;
+}
+.design-cards div:nth-child(6){
+    grid-area: virtual;
+}
+.design-cards div:nth-child(7){
+    grid-area: publicidad
+}
+
+@media only screen and (max-width: 576px) {
+    .design {
+        width: 95%;
+    }
+    .design-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .design-cards div:hover {
+        background-color: var(--color-orange);
+        color: rgb(255,255,255);
+    }
+
+    .design-cards div {
+        width: 100%;
+    }
+
+    .design h2 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .design-cards div h3 {
+        font-size: 2rem;
+    }
+    .design-cards div p {
+        font-size: 1rem;
+    }
+}

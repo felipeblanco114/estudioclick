@@ -17,6 +17,12 @@ const Footer = () => {
                 <h4><HashLink to="/#contact" smooth>Contacto</HashLink></h4>
             </div>
             <div className='footer-list'>
+                <h3>Servicios</h3>
+                <h4><HashLink to="/paginas-web#top" smooth>Páginas web</HashLink></h4>
+                <h4><HashLink to="/diseño-grafico#top" smooth>Diseño gráfico</HashLink></h4>
+                <h4><HashLink to="/marketing#top" smooth>Marketing</HashLink></h4>
+            </div>
+            <div className='footer-list'>
               <h3>Dirección</h3>
                 <h4><a href='https://maps.app.goo.gl/Q7XcaWFGNtmSaD9t7' target="_blank" rel='noreferrer'>Rivadavia 418, Coronel Suárez</a></h4>
             </div>
