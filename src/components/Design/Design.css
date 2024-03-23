@@ -11,6 +11,8 @@
 .design h2 {
     font-size: 8rem;
     margin-top: 6rem;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .design h2:hover {

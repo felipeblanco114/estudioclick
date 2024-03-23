@@ -17,7 +17,7 @@ const Marketing = () => {
           <div>
             <h3>GESTIÓN DE CONTENIDOS</h3>
             <p>
-              Ofrecemos un servicio profesional de creación, curación y planificación estratégica de contenido para plataformas digitales, enfocado en alinear cada mensaje con los objetivos corporativos y las expectativas de la audiencia. A través de una comunicación cuidadosamente diseñada, buscamos potenciar la presencia online de su marca, fomentando la interacción y el compromiso de su comunidad digital
+              Ofrecemos un servicio profesional de creación, curación y planificación estratégica de contenido para plataformas digitales, enfocado en alinear cada mensaje con los objetivos corporativos y las expectativas de la audiencia. A través de una comunicación cuidadosamente diseñada, buscamos potenciar la presencia online de su marca, fomentando la interacción y el compromiso de su comunidad digital.
             </p>
           </div>
           <div>

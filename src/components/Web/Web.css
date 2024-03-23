@@ -1,0 +1,136 @@
+.web {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.web h2 {
+    font-size: 8rem;
+    margin-top: 6rem;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.web h2:hover {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+
+.web-cards {
+    display: grid;
+    grid-template-areas: 
+    "landing economica"
+    "personalizada ecommerce";
+    width: 100%;
+    grid-gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.web-cards .web-card {
+    background-color: var(--color-orange);
+    color: rgb(255,255,255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2rem 0 2rem 0;
+    transition: 0.2s;
+    justify-content: space-between;
+}
+
+.web-card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.web-cards div h3::selection, .web-cards div p::selection {
+    color: rgb(255,255,255);
+    background: var(--color-orange);
+}
+
+.web-cards div h3 {
+    font-size: 3rem;
+}
+
+.web-cards div p {
+    font-size: 1.25rem;
+    width: 90%;
+    text-align: center;
+}
+
+.web-cards .web-card:hover {
+    background-color: rgb(255,255,255,0.3);
+    color: var(--color-orange);
+    transition: 0.2s;
+}
+
+.web-cards div:nth-child(1) {
+    grid-area: landing;
+}
+.web-cards div:nth-child(2) {
+    grid-area: economica;
+}
+.web-cards div:nth-child(3) {
+    grid-area: personalizada;
+}
+
+.web-cards div:nth-child(4) {
+    grid-area: ecommerce;
+}
+
+.web-cards div button {
+    background: rgb(255,255,255);
+    padding: .8rem 1.4rem;
+    font-size: 1.25rem;
+    border: none;
+    color: var(--color-orange);
+    transition: .2s;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.web-cards .web-card:hover button {
+    background: var(--color-orange);
+    color: rgb(255,255,255);
+    transition: 0.2s;
+}
+
+@media only screen and (max-width: 576px) {
+    .web {
+        width: 95%;
+    }
+    .web-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .web-cards div:hover {
+        background-color: var(--color-orange);
+        color: rgb(255,255,255);
+    }
+
+    .web-cards div {
+        width: 100%;
+    }
+
+    .web h2 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .web-cards div h3 {
+        font-size: 2rem;
+    }
+    .web-cards div p {
+        font-size: 1rem;
+    }
+}
