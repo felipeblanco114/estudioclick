@@ -21,7 +21,7 @@ const Web = () => {
           </div>
           <div className='web-card'>
             <div>
-            <h3>PÁGINA ECÓNOMICA</h3>
+            <h3>PÁGINA ECONÓMICA</h3>
               <p>
                 ¡Es la respuesta que has estado buscando! Ahora podrás tener tu propio sitio web. Esto te permitirá difundir tus productos y servicios a nivel nacional e internacional, abriendo un mundo de oportunidades para tu crecimiento.
               </p>
