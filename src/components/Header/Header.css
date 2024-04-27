@@ -16,6 +16,10 @@ header div {
     width: 96%;
 }
 
+.logo-header {
+    max-width: 8rem;
+}
+
 .hamburger {
     position: relative;
     width: 2.4rem;

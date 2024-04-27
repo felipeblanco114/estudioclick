@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../images/logoclick.png';
+import Logo from '../../images/logo-png.png';
 import { HashLink } from 'react-router-hash-link';
 import './Header.css';
 
@@ -17,7 +17,7 @@ const Header = () => {
         <div>
             <div className='logo'>
               <HashLink to="/#home" smooth onClick={toggle}>
-                <img src={Logo} alt='logo espacio click' />
+                <img src={Logo} alt='logo espacio click' className='logo-header' />
               </HashLink>
             </div>
             <nav>

@@ -8,15 +8,11 @@ import Design from "./components/Design/Design.jsx";
 import PreLoader from "./components/PreLoader/PreLoader.jsx";
 import AOS from 'aos';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import 'aos/dist/aos.css';
 import './App.css';
 
 
 function App() {
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <BrowserRouter>
