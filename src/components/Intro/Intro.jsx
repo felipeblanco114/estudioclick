@@ -12,7 +12,7 @@ const Intro = () => {
                 QUE CADA <span>CLICK</span> CUENTE
             </h1>
         </div>
-        <div data-aos="fade-up">
+        <div>
             <div className='container-objetivos' id='cont-obj'>
                 <div className='items-objetivos mision'>
                     <h2>MISIÓN</h2>

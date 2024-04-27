@@ -7,7 +7,7 @@
 }
 
 .home .slogan h1 {
-    font-size: 12rem;
+    font-size: 8rem;
     text-align: center;
     user-select: none;
     -webkit-user-select: none;
@@ -23,7 +23,7 @@
     cursor: pointer;
     transition: 0.2s;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-width: 4px;
 }
 
 .home div .container-objetivos {
@@ -158,4 +158,21 @@
     .home .slogan h1 {
         font-size: 3.5rem;
     }
+    .mision:hover img, .vision:hover img, .valores:hover img {
+        display: none;
+        position: relative;
+        transition: 0.2s;
+        bottom: 0rem;
+    }
+    .mision:hover h2, .vision:hover h2, .valores:hover h2 {
+        display: block;
+        transition: 0.2s;
+        bottom: 0;
+    }
+
+    .valores:hover p {
+        position: relative;
+        top: 0;
+    }
+    
 }

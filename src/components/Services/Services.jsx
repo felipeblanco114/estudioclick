@@ -4,7 +4,7 @@ import "./Services.css"
 
 const Services = () => {
   return (
-    <div className='services' id='services' data-aos="fade-up">
+    <div className='services' id='services'>
         <div className='container-services'>
             <h2>
                 SERVICIOS
